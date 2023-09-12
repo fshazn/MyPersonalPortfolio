@@ -1,6 +1,11 @@
 import React from "react";
+import Aos from "aos";
+import { useEffect } from "react";
 
 const Services = () => {
+  useEffect(() =>{
+    Aos.init({duration: 1200})
+  })
   return (
     <div className="h-screen flex flex-col items-center pt-14">
       <p className=" mb-2 text-sm">Explore My</p>
@@ -9,7 +14,7 @@ const Services = () => {
       </h1>
 
       <div className=" flex flex-row gap-10 mt-8 text-white">
-        <div className=" flex flex-col items-center w-[15rem] h-[22rem] p-6 flex-1 rounded-2xl border border-purple-950  hover:md:scale-105">
+        <div className=" flex flex-col items-center w-[15rem] h-[22rem] p-6 flex-1 rounded-2xl border border-purple-950  hover:md:scale-105"data-aos="fade-up-right">
           <p className=" items-center font-semibold text-xl">UI/UX Designs</p>
 
           <p className=" items-center text-center whitespace-normal overflow-y-auto mt-8">
@@ -20,7 +25,7 @@ const Services = () => {
             satisfaction through strategic UI/UX.
           </p>
         </div>
-        <div className=" flex flex-col items-center w-[25rem] h-[22rem] p-6 flex-1 rounded-2xl border border-pink-950 hover:md:scale-105">
+        <div className=" flex flex-col items-center w-[25rem] h-[22rem] p-6 flex-1 rounded-2xl border border-pink-950 hover:md:scale-105" data-aos="fade-up">
           <p className=" items-center font-semibold text-xl">
             Responsive Web Designs
           </p>
@@ -33,7 +38,7 @@ const Services = () => {
             presence that impresses every user.
           </p>
         </div>
-        <div className=" flex flex-col items-center w-[25rem] h-[22rem] p-6 flex-1 rounded-2xl border border-purple-950  hover:md:scale-105">
+        <div className=" flex flex-col items-center w-[25rem] h-[22rem] p-6 flex-1 rounded-2xl border border-purple-950  hover:md:scale-105" data-aos="fade-up-left">
           <p className=" items-center font-semibold text-xl">
             Mobile App Designs
           </p>

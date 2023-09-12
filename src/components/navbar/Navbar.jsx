@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="sticky top-0 left-0 right-0 py-2 mb-4 bg-slate-900">
+    <nav className="sticky top-0 left-0 right-0 py-2 mb-4 bg-slate-900 max-container">
       <div className=" flex flex-row justify-between  max-container items-center">
         <div>
           <div
